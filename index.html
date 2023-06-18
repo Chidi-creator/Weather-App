@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    
+<div id="errorModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 style="color: red;">Error!!</h2>
+      <p id="errorMessage"></p>
+    </div>
+  </div>
+    <div class="wrapper">
+      <div class="heading">
+        <h2 class="location-name">Weather Location</h2>
+      </div>
+
+      <div class="weather-circle">
+        <div class="container">
+          <div class="temp">
+            <div class="num"><h1>13</h1></div>
+            <div class="degree">oC</div>
+            <div class="img"><img src="" alt="" class="weather-icon"></div>
+          </div>
+          <div class="describe-side">
+            <h3 class="description"> </h3>
+          </div>
+          <div class="showcase">
+            <div class="humidity">
+              <div class="humidity-icon">
+                <img src="images/thermometer.svg" alt="" />
+              </div>
+              <div class="humidity-text"></div>
+            </div>
+            <div class="speed">
+              <div class="speed-icon"><img src="images/fan.svg" alt="" /></div>
+              <div class="speed-text"></div>
+            </div>
+             </div>
+             <div class="time-side">
+                <h2 class="time"></h2>
+            </div>
+            <div class="date-side">
+                <h4 class="date"></h4>
+            </div>
+        </div>
+    
+        
+    </div>
+    <form id="form" novalidate>
+        <div class="label-container">
+            <label for="location" class="locate-label">Location:</label>
+        </div>
+        <input type="text" name="" id="location" placeholder="enter the city" class="textbox" pattern="^[A-Za-z0-9\s\-']+$ ">
+    </form>
+    <button class="submit-button">submit</button>
+  </body>
+</html>
+
